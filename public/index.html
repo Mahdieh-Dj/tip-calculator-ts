@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calc-container persian-digit">
+      <div class="input-panel">
+        <p>قیمت</p>
+        <input id="input-price" type="number" min="0" />
+        <p>تخفیف</p>
+        <input
+          class="range-input"
+          id="discount"
+          type="range"
+          max="100"
+          min="0"
+        />
+        <p>انعام</p>
+        <input
+          id="tip"
+          class="range-input"
+          type="range"
+          max="100"
+          min="0"
+        /><br />
+        <button id="submit-btn">محاسبه</button>
+      </div>
+      <span class="vertical-line"></span>
+      <span class="horinzental-line"></span>
+      <div class="show-panel">
+        <div class="result-panel">
+          <div>
+            <span>قیمت</span>
+            <p id="price-box"></p>
+          </div>
+        </div>
+        <div class="result-panel">
+          <div>
+            <span> مقدار تخفیف</span>
+            <p id="discount-box"></p>
+          </div>
+          <div>
+            <span>%</span>
+            <p id="discount-box-per"></p>
+          </div>
+        </div>
+        <div class="result-panel">
+          <div>
+            <span>مقدار انعام</span>
+            <p id="tip-box"></p>
+          </div>
+          <div>
+            <span>%</span>
+            <p id="tip-box-per"></p>
+          </div>
+        </div>
+        <div class="result-panel">
+          <div>
+            <span>قیمت نهایی</span>
+            <p id="final-price"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/script.js"></script>
+  </body>
+</html>
